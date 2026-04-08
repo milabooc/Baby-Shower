@@ -1,0 +1,284 @@
+!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Fiesta Dino - Baby Shower Liam Gael</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#695d23",
+                        "surface-tint": "#386d65",
+                        "outline-variant": "#bcbaa8",
+                        "primary-dim": "#2b6159",
+                        "surface": "#fffbff",
+                        "primary-fixed": "#b6eee2",
+                        "on-background": "#39382c",
+                        "background": "#fffbff",
+                        "inverse-surface": "#0f0e09",
+                        "secondary-dim": "#355d74",
+                        "on-surface": "#39382c",
+                        "on-primary-fixed-variant": "#2f645c",
+                        "on-secondary-container": "#2e566d",
+                        "on-primary-container": "#245a52",
+                        "secondary-fixed": "#c5e7ff",
+                        "inverse-primary": "#bef6eb",
+                        "surface-bright": "#fffbff",
+                        "surface-dim": "#e6e3d0",
+                        "secondary": "#426980",
+                        "surface-variant": "#ece9d6",
+                        "surface-container-high": "#f2eede",
+                        "on-secondary-fixed-variant": "#396077",
+                        "tertiary-fixed-dim": "#e9d791",
+                        "surface-container-highest": "#ece9d6",
+                        "tertiary": "#71642a",
+                        "on-surface-variant": "#666556",
+                        "on-primary-fixed": "#0b4740",
+                        "tertiary-fixed": "#f7e59d",
+                        "on-tertiary-container": "#5f531a",
+                        "secondary-fixed-dim": "#b2daf5",
+                        "surface-container": "#f7f4e4",
+                        "on-error-container": "#6e0a12",
+                        "outline": "#838171",
+                        "tertiary-container": "#f7e59d",
+                        "inverse-on-surface": "#9f9d93",
+                        "on-tertiary-fixed": "#4c4108",
+                        "secondary-container": "#c5e7ff",
+                        "error": "#af3d3b",
+                        "tertiary-dim": "#64581f",
+                        "primary-container": "#b6eee2",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#194359",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "primary": "#386d65",
+                        "error-dim": "#67040d",
+                        "surface-container-low": "#fdf9ec",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#a8dfd4",
+                        "error-container": "#fa746f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    }
+                },
+            },
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-surface text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden">
+    <!-- Top Navigation Bar -->
+    <header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-stone-900/70 backdrop-blur-xl shadow-sm shadow-stone-200/40 flex justify-between items-center px-6 py-4">
+        <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-teal-700 dark:text-teal-300" data-icon="egg">egg</span>
+            <span class="text-2xl font-bold text-teal-800 dark:text-teal-200 font-plus-jakarta-sans tracking-tight">Fiesta Dino</span>
+        </div>
+        <button id="musicToggleBtn" class="w-10 h-10 rounded-full flex items-center justify-center text-stone-500 dark:text-stone-400 hover:scale-105 transition-transform active:duration-150 active:scale-95">
+            <span class="material-symbols-outlined" data-icon="music_note">music_note</span>
+        </button>
+    </header>
+
+    <main class="pt-20 pb-20">
+        <!-- Hero Section -->
+        <section class="relative min-height-[707px] px-6 pt-12 pb-24 overflow-hidden">
+            <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                <div class="relative z-10 text-center md:text-left flex-1">
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-primary-container text-on-primary-container font-semibold text-sm mb-6">
+                        ¡Mi Baby Shower!
+                    </span>
+                    <h1 class="text-6xl md:text-8xl font-extrabold text-primary tracking-tighter leading-none mb-4">
+                        Liam <br/>Gael
+                    </h1>
+                    <p class="text-xl text-on-surface-variant max-w-sm font-medium">
+                        Un pequeño gran rugido está por llegar a nuestra familia.
+                    </p>
+                </div>
+                <div class="relative flex-1">
+                    <div class="absolute -top-12 -right-12 w-64 h-64 bg-secondary-fixed opacity-20 blur-3xl rounded-full"></div>
+                    <div class="relative w-full aspect-square max-w-md mx-auto overflow-hidden">
+                        <div class="absolute inset-0 bg-primary-container/20 rounded-full blur-3xl"></div>
+                        <div class="w-full h-full relative z-10 overflow-hidden rounded-xl">
+                            <img alt="Whimsical Baby Dinosaur" class="w-[200%] h-[200%] object-cover object-[15%_10%]" src="https://i.pinimg.com/736x/bb/1b/de/bb1bde505ba2690646e993e4c872b948.jpg"/>
+                        </div>
+                        <div class="absolute -bottom-4 -left-8 w-24 h-24 egg-gradient rounded-full shadow-lg z-20 flex items-center justify-center border-4 border-white">
+                            <span class="material-symbols-outlined text-primary text-3xl" data-icon="child_care">child_care</span>
+                        </div>
+                        <span class="material-symbols-outlined absolute top-10 right-0 text-tertiary text-4xl animate-bounce" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Dinosaur Tracks Decoration -->
+            <div class="absolute bottom-4 left-0 w-full flex justify-around opacity-10 pointer-events-none">
+                <span class="material-symbols-outlined text-6xl rotate-12" data-icon="pets">pets</span>
+                <span class="material-symbols-outlined text-6xl -rotate-12 mt-8" data-icon="pets">pets</span>
+                <span class="material-symbols-outlined text-6xl rotate-45 mt-4" data-icon="pets">pets</span>
+            </div>
+        </section>
+
+        <!-- Music & Countdown Layer -->
+        <section class="px-6 -mt-12 mb-16 relative z-30">
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Music Player Card -->
+                <div class="bg-surface-container-low rounded-xl p-6 flex items-center gap-4 group hover:bg-surface-container transition-colors shadow-sm shadow-stone-200/40">
+                    <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container cursor-pointer" id="playPauseBtn">
+                        <span class="material-symbols-outlined group-active:scale-90 transition-transform" data-icon="play_circle" style="font-variation-settings: 'FILL' 1;" id="playIcon">play_circle</span>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Ambiente</p>
+                        <p class="text-on-surface font-semibold">A Thousand Years</p>
+                    </div>
+                </div>
+                
+                <!-- Dinómetro Countdown -->
+                <div class="md:col-span-2 bg-surface-container-highest rounded-xl p-6 flex flex-col justify-center">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-bold flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary" data-icon="alarm">alarm</span>
+                            Dinómetro: Faltan...
+                        </h3>
+                    </div>
+                    <div class="flex justify-between items-center px-4">
+                        <div class="text-center">
+                            <span class="block text-3xl font-extrabold text-primary" id="days">00</span>
+                            <span class="text-[10px] uppercase font-bold text-on-surface-variant">Días</span>
+                        </div>
+                        <div class="h-8 w-px bg-outline-variant/30"></div>
+                        <div class="text-center">
+                            <span class="block text-3xl font-extrabold text-primary" id="hours">00</span>
+                            <span class="text-[10px] uppercase font-bold text-on-surface-variant">Horas</span>
+                        </div>
+                        <div class="h-8 w-px bg-outline-variant/30"></div>
+                        <div class="text-center">
+                            <span class="block text-3xl font-extrabold text-primary" id="minutes">00</span>
+                            <span class="text-[10px] uppercase font-bold text-on-surface-variant">Minutos</span>
+                        </div>
+                        <div class="h-8 w-px bg-outline-variant/30"></div>
+                        <div class="text-center">
+                            <span class="block text-3xl font-extrabold text-primary" id="seconds">00</span>
+                            <span class="text-[10px] uppercase font-bold text-on-surface-variant">Segundos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Player Controls -->
+        <section class="px-6 mb-8">
+            <div class="max-w-4xl mx-auto">
+                <div id="musicPlayerContainer" class="bg-surface-container-low rounded-xl p-6 shadow-sm shadow-stone-200/40" style="display: none;">
+                    <div class="space-y-4">
+                        <!-- Progress Bar -->
+                        <div class="flex items-center gap-3">
+                            <span class="text-xs text-on-surface-variant w-12" id="currentTime">0:00</span>
+                            <input type="range" id="progressBar" class="flex-1 h-2 bg-outline-variant/30 rounded-lg appearance-none cursor-pointer" min="0" max="100" value="0" style="accent-color: #386d65;">
+                            <span class="text-xs text-on-surface-variant w-12" id="duration">0:00</span>
+                        </div>
+                        <!-- Volume Control -->
+                        <div class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-on-surface-variant" data-icon="volume_up">volume_up</span>
+                            <input type="range" id="volumeBar" class="flex-1 h-2 bg-outline-variant/30 rounded-lg appearance-none cursor-pointer" min="0" max="100" value="50" style="accent-color: #386d65;">
+                        </div>
+                    </div>
+                </div>
+                <!-- Hidden Audio Player -->
+                <audio id="audioPlayer" src="Christina Perri - A Thousand Years .mp3" preload="metadata"></audio>
+            </div>
+        </section>
+
+        <!-- Details & Location Bento -->
+        <section class="px-6 mb-16">
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Date/Time Card -->
+                <div class="bg-primary-container/40 rounded-xl p-8 relative overflow-hidden group">
+                    <span class="material-symbols-outlined absolute -right-4 -bottom-4 text-8xl text-primary/10 group-hover:scale-110 transition-transform" data-icon="calendar_month">calendar_month</span>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                        <span class="material-symbols-outlined" data-icon="event">event</span>
+                        ¿Cuándo sera el Dinoencuentro?
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center font-bold text-primary">6</div>
+                            <div>
+                                <p class="font-bold text-on-surface">6 de Junio</p>
+                                <p class="text-sm text-on-surface-variant">Baby Shower</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary" data-icon="schedule">schedule</span>
+                            </div>
+                            <div>
+                                <p class="font-bold text-on-surface">4:00 PM</p>
+                                <p class="text-sm text-on-surface-variant">Puntualidad de T-Rex</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Location Card -->
+                <div class="bg-surface-container-low rounded-xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+                            El Nido
+                        </h3>
+                        <p class="text-on-surface-variant mb-6 leading-relaxed">
+                            Funza, Cundinamarca<br/>
+                            Cra.7D#7B-39<br/>
+                            Barrio Popular, Casa de los Abuelos
+                        </p>
+                    </div>
+                    <a class="flex items-center justify-center gap-2 py-4 px-6 rounded-full bg-surface-container-highest text-primary font-bold border border-primary/10 hover:bg-primary-container transition-all" href="https://www.google.com/maps/place/Cra.+7d+%237b-39,+Funza,+Cundinamarca/@4.7088977,-74.2160334,17z/data=!3m1!4b1!4m5!3m4!1s0x8e3f9d54bf45efb7:0x518db53c0bc77fe5!8m2!3d4.7088977!4d-74.2134531?entry=ttu&g_ep=EgoyMDI2MDQwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                        <span class="material-symbols-outlined" data-icon="map">map</span>
+                        Ver en Mapa
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Form Section -->
+        <section class="px-6 max-w-2xl mx-auto mb-12">
+            <div class="bg-surface-container-highest rounded-xl p-8 md:p-12 text-center relative overflow-hidden">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-tertiary-container/30 rounded-full blur-2xl"></div>
+                <h2 class="text-3xl font-bold mb-4 relative z-10">Confirmar Asistencia</h2>
+                <p class="text-on-surface-variant mb-10 relative z-10">¿Nos acompañas en esta expedición? Por favor dinos si vienes para apartar tu lugar en la cueva.</p>
+                <div class="flex flex-col items-center relative z-10">
+                    <a class="inline-flex items-center justify-center w-full py-5 rounded-full bg-primary text-on-primary font-bold text-lg shadow-xl shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all" href="https://docs.google.com/forms/d/e/1FAIpQLSduA2-oUeIvEtwvIFNW9pT7ZkZ-ViKCUd8eOG85ZPyE0kBc2g/viewform?usp=publish-editor" target="_blank">
+                        ¡Confirmar mi lugar!
+                        <span class="material-symbols-outlined ml-2" data-icon="arrow_forward">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center pb-12 px-6">
+        <p class="text-on-surface-variant text-sm opacity-60">© 2026 Liam Gael Baby Shower</p>
+    </footer>
+
+        <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

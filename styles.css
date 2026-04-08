@@ -1,0 +1,95 @@
+/* Custom Styles for Fiesta Dino Baby Shower */
+
+body { 
+    font-family: 'Be Vietnam Pro', sans-serif; 
+    min-height: max(884px, 100dvh);
+}
+
+h1, h2, h3 { 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Egg Gradient Effect */
+.egg-gradient {
+    background: radial-gradient(circle at 30% 30%, #ffffff, #a8dfd4);
+}
+
+/* Jungle Background Pattern */
+.jungle-bg {
+    background-image: radial-gradient(#ece9d6 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+/* Dino Mask Effect */
+.dino-mask {
+    mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 100%);
+}
+
+/* Music Player Styling */
+#musicPlayerContainer {
+    transition: all 0.3s ease;
+}
+
+/* Custom Range Slider Styling */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #386d65;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #386d65;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: rgba(131, 129, 113, 0.3);
+    border-radius: 8px;
+    height: 8px;
+}
+
+input[type="range"]::-moz-range-track {
+    background: rgba(131, 129, 113, 0.3);
+    border-radius: 8px;
+    height: 8px;
+}
+
+/* Smooth transitions */
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+/* Pulse animation for music button */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.playing {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
