@@ -2,9 +2,9 @@
 // COUNTDOWN TIMER (DINÓMETRO)
 // ========================================
 
-// Target date: June 6, 2026 at 4:00 PM (16:00)
+// Target date: May 31, 2026 at 4:00 PM (16:00)
 // Using explicit date components to avoid timezone issues
-const targetDate = new Date(2026, 5, 6, 16, 0, 0, 0).getTime(); // Month is 0-indexed, so 5 = June
+const targetDate = new Date(2026, 4, 31, 16, 0, 0, 0).getTime(); // Month is 0-indexed, so 4 = May
 
 console.log('Target Date:', new Date(targetDate));
 console.log('Current Date:', new Date());
@@ -160,6 +160,13 @@ function initializeAudioEvents() {
         updatePlayIcon();
         stopProgressUpdate();
     });
+
+    // Autoplay when page loads
+    audioPlayer.play().catch(error => {
+        console.log('Autoplay blocked:', error);
+        isPlaying = false;
+        updatePlayIcon();
+    });
 }
 
 // Initialize event listeners when DOM is ready
@@ -205,6 +212,13 @@ function initializeEventListeners() {
         });
         console.log('Volume bar listener attached');
     }
+
+    // Stop music when leaving the page
+    window.addEventListener('beforeunload', () => {
+        if (audioPlayer) {
+            audioPlayer.pause();
+        }
+    });
 }
 
 // Wait for DOM to be ready
