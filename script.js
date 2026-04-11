@@ -138,7 +138,7 @@ function initializeAudioEvents() {
     }
 
     audioPlayer.volume = 0.5;
-    audioPlayer.preload = 'metadata';
+    audioPlayer.preload = 'auto';
 
     audioPlayer.addEventListener('loadedmetadata', updateAudioProgress);
     audioPlayer.addEventListener('timeupdate', updateAudioProgress);
@@ -161,11 +161,13 @@ function initializeAudioEvents() {
         stopProgressUpdate();
     });
 
-    // Autoplay when page loads
-    audioPlayer.play().catch(error => {
-        console.log('Autoplay blocked:', error);
-        isPlaying = false;
-        updatePlayIcon();
+    // Wait for audio to be ready and then autoplay
+    audioPlayer.addEventListener('canplay', () => {
+        audioPlayer.play().catch(error => {
+            console.log('Autoplay blocked by browser:', error);
+            isPlaying = false;
+            updatePlayIcon();
+        });
     });
 }
 
