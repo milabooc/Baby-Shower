@@ -2,9 +2,9 @@
 // COUNTDOWN TIMER (DINÓMETRO)
 // ========================================
 
-// Target date: May 24, 2026 at 4:00 PM (16:00)
+// Target date: May 24, 2026 at 2:00 PM (14:00)
 // Using explicit date components to avoid timezone issues
-const targetDate = new Date(2026, 4, 24, 16, 0, 0, 0).getTime(); // Month is 0-indexed, so 4 = May
+const targetDate = new Date(2026, 4, 24, 14, 0, 0, 0).getTime(); // Month is 0-indexed, so 4 = May
 
 console.log('Target Date:', new Date(targetDate));
 console.log('Current Date:', new Date());
